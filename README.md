@@ -1,89 +1,71 @@
-# 💸 App de Organização de Finanças Pessoais com Vibe Coding
+# 💸 Caixa Azul - App de Organização de Finanças Pessoais com Vibe Coding
 
-Aprenda a **criar soluções com IA** de forma criativa, guiando ferramentas como o **Copilot** e o **Lovable** com uma comunicação simples e natural. O foco é desenvolver o conceito de um **App de Organização de Finanças Pessoais**, mas, acima de tudo, aprender o **jeito Vibe de programar com IA**.
+Este repositório contém a entrega do meu Desafio de Projeto na plataforma DIO. Utilizando o conceito de **Vibe Coding** e focado em um **MVP (Produto Mínimo Viável)**, desenvolvi o conceito e a interface funcional de um aplicativo de finanças inclusivo, acessível e inteligente chamado **Caixa Azul**.
 
-## ✨ O que é Vibe Coding
+O grande diferencial deste projeto foi guiar a IA através de princípios de **Design Universal** e conceitos de **Cibersegurança** (como o protocolo OAuth 2.0 e separação de camadas em nuvem).
 
-**Vibe Coding** é uma forma leve e criativa de desenvolver com IA, baseada em **conversas naturais e bem estruturadas**. Você não precisa escrever código linha por linha. Em vez disso, aprende a **guiar a IA** descrevendo suas ideias de forma clara, com **intenção e contexto**. Em outras palavras:
+---
 
-> Você mostra a vibe da sua ideia e a IA transforma em solução (ou em um caminho para ela).
+## 🎯 O Conceito do App: Caixa Azul
+O **Caixa Azul** resolve o maior problema das ferramentas financeiras tradicionais: a entrada manual de dados entediante. Através de um assistente de IA conversacional integrado e uma divisão visual baseada em "Caixas Financeiras", o usuário gerencia seu dinheiro de forma extremamente simples e visual.
 
-## 🎯 Desafio
+---
 
-Problema: Muitas pessoas não conseguem manter um controle financeiro porque os aplicativos exigem muita entrada de dados manual, e a criação de orçamentos é vista como algo tedioso. 
+## 🪄 Meu Prompt Final (PRD Aplicado)
 
-Precisamos de uma solução que permita **controlar as finanças por meio de uma conversa simples**, com **agentes de IA** capazes de criar **planos de economia personalizados e automatizados**. Você deve utilizar as ideias de **Vibe Coding** e **MVP (Produto Mínimo Viável)** para desenvolver o **conceito de um aplicativo** que resolva o problema citado.
-
-> [!IMPORTANT]
-> Você **não precisa construir o código**! O foco está em **usar a IA como sua parceira criativa**, transformando boas ideias e prompts em conceitos funcionais que simulam um produto real.
-
-## 🪄 Etapas do Desafio
-
-### 1. Saber o que Pedir é a Chave! Otimize seus Prompts!
-
-Antes de pedir para a IA "criar um app", é importante definir com clareza o que você quer construir e por quê. Para isso, você vai criar um **PRD (Product Requirements Document)** simplificado, uma especificação que serve como _briefing_ para a IA entender sua ideia.
-
-Um bom PRD deve descrever o problema, quem será beneficiado, as principais funcionalidades e o que você espera que a IA entregue. Use o modelo abaixo como ponto de partida e adapte conforme o seu estilo:
+Este foi o briefing exato estruturado e inserido na plataforma **Lovable** para dar vida ao projeto:
 
 ```txt
-# Contexto
-Quero criar um aplicativo de Organização de Finanças Pessoais que funcione por meio de conversas com o usuário.  
-A ideia é facilitar o controle financeiro de forma simples e natural, sem formulários manuais ou planilhas complexas.
+# PRD: Aplicativo de Organização de Finanças Pessoais via Chat IA
 
-# Problema
-Muitas pessoas desistem de controlar seus gastos porque os apps atuais exigem muita entrada manual e pouca personalização.  
-Quero resolver isso com uma experiência de conversa e recomendações automáticas de economia.
+## 1. Visão Geral do Produto
+Um aplicativo web responsivo voltado para iniciantes em finanças. O controle financeiro é feito exclusivamente por meio de conversas em linguagem natural com um assistente virtual, eliminando planilhas e formulários complexos. O produto segue rigorosamente os conceitos de Design Universal.
 
-# Público-Alvo
-Pessoas que querem começar a organizar suas finanças de forma prática e sem complicação, principalmente iniciantes.
+## 2. Requisitos de Design Universal e Acessibilidade
+* Contraste e Legibilidade: Fontes legíveis (mínimo 16px) e alto contraste entre texto e fundo.
+* Navegação Clara: Layout limpo e espaçado. Botões e elementos clicáveis com área mínima de 48x48 pixels.
+* Simplicidade Cognitiva: Interface direta, sem jargões econômicos ou excesso de elementos visuais.
+* Suporte a Leitores de Tela: Código estruturado de forma semântica (tags HTML5 corretas).
 
-# Funcionalidades-Chave
-1. Registrar gastos via chat em linguagem natural.  
-2. Classificar automaticamente as transações.  
-3. Definir e acompanhar metas financeiras.  
-4. Receber dicas de economia do “Agente Financeiro”.  
-5. Visualizar relatórios simples e personalizados.
+## 3. Público-Target e Tom de Voz
+* Usuário: Iniciantes em controle financeiro, pessoas que buscam praticidade e usuários que sofrem com compras por impulso.
+* Tom de Voz: Educativo, acolhedor, empático, firme (quando necessário para compras por impulso) e simples.
 
-# Entregável da IA
-Gerar um plano de MVP com as principais telas, recursos necessários e um esboço de validação inicial.  
-Usar tom educativo e linguagem acessível, em português.
+## 4. Arquitetura de Telas (Escopo do MVP)
+
+### Tela 1: Dashboard Principal (Visão Geral)
+* Componente Topo: Card com o "Saldo Atual", "Total de Receitas do Mês" e "Total de Despesas".
+* Componente Central (As Caixas Financeiras): Divisão visual em 3 grandes caixas ou abas:
+  1. Custos Fixos: Gastos essenciais de sobrevivência (Aluguel, Luz, Internet).
+  2. Lazer / Variáveis: Gastos com estilo de vida (Restaurantes, Cinema, Compras).
+  3. Investimentos com Metas: Dinheiro guardado para o futuro, dividido por objetivos claros (Reserva de Emergência, Viagem dos Sonhos, Minha Casa Própria).
+* Componente Inferior: Barra de progresso para a "Meta de Economia Geral do Mês".
+* Botão Flutuante (CTA): Botão fixo no canto inferior direito escrito "Falar com Assistente".
+* Botão de Pânico (SOS Compra por Impulso): Botão vermelho visível no dashboard para ativar o fluxo de contenção de gastos imediato.
 ```
 
-Depois de preencher o modelo, use o Copilot Web para revisar e melhorar o seu prompt antes de ir ao Lovable. A ideia é lapidar o texto até que ele fique claro, direto e reflita exatamente a sua intenção.
+---
 
-> [!TIP]
-> Pense no PRD/Prompt como “o briefing que a IA precisa para entender sua vibe”. Portanto, quanto mais claro e intencional for o texto, mais próximas do ideal serão as respostas da IA.
+## 📸 Demonstração do MVP
 
-### 2. Explorando o Lovable na Prática
+O aplicativo foi publicado com sucesso e a interface responsiva adaptou-se perfeitamente aos requisitos do PRD:
 
-Com seu PRD pronto e revisado, é hora de colocar a IA em ação. Abra o Lovable, cole seu prompt completo e peça o plano inicial do MVP do seu aplicativo. Como o plano gratuito limita você a 5 interações por dia, seja estratégico:
-- Faça perguntas diretas e construtivas, como “crie o fluxo de telas com base nas funcionalidades listadas” ou “gere uma versão resumida do plano de MVP”;
-- Priorize clareza nas instruções para aproveitar ao máximo cada resposta;
+* **Link para testar o Aplicativo:** `https://chat-your-riches.lovable.app/`
+* *(Insira aqui abaixo o print que você tirou da tela do seu aplicativo rodando)*
 
-Durante essa etapa, você pode orientar a IA para três entregas principais:
-1. Agente Financeiro: defina o comportamento e o tom de voz de um consultor financeiro pessoal, alinhado ao público e objetivo do app.
-2. Fluxo de Telas: peça à IA para gerar o fluxo conceitual de telas com base nas funcionalidades descritas no PRD, simulando a interação por conversa.
-3. Plano de MVP: solicite um resumo das 5 funcionalidades principais, dos recursos necessários e um plano de validação inicial (como medir se o app cumpre seu propósito).
+---
 
-> [!TIP]
-> Se preferir, você pode fazer tudo com o **Copilot**. O importante é exercitar a habilidade de transformar intenções em instruções claras e testar os limites da IA como parceira criativa.
+## 🧠 Reflexão sobre o Processo (Vibe Coding)
 
-### 3. Entregando o Desafio na DIO
+* **O que funcionou bem?**
+  A IA entendeu perfeitamente a ideia do layout limpo e acessível. Consegui criar as divisões de gastos e os objetivos de economia de forma muito rápida. O botão de emergência `SOS Impulso` ficou ótimo e foi gerado de primeira.
+  
+* **O que não funcionou como o esperado?**
+  Logo no início, a tela de login quebrou com um aviso de erro preto. Descobri que foi uma falha ao carregar os códigos internos de validação de e-mail e senha. Precisei usar o botão de correção automática do próprio site para consertar o código e fazer o sistema voltar a funcionar.
 
-Finalize seu projeto criando um **repositório no GitHub** (pode ser um **fork** deste).  
-No README do seu repositório, inclua:
+* **O que aprendi sobre conversar com IAs?**
+  Aprendi que não adianta só pedir "um app de finanças". O resultado fica muito melhor quando explicamos as regras antes, como o tamanho dos botões, o tom de voz do chat e os tipos de investimentos que o app deve ter. Isso economiza tempo e evita erros.
 
-- Seu **prompt final** (PRD);  
-- Prints ou pequenos vídeos das interações com a IA;  
-- Um resumo do que o seu **App de Finanças Pessoais** faz;  
-- Uma breve **reflexão sobre o processo**:
-  - O que funcionou bem?  
-  - O que não funcionou como o esperado?  
-  - O que aprendeu sobre conversar com IAs?
-
-> [!TIP]
-> Publique seu repositório e compartilhe o link na plataforma da DIO! Sua entrega é a prova de que você domina o raciocínio de Vibe Coding, mesmo sem escrever uma única linha de código.
-
-## 💬 Conclusão
-
-Vibe Coding é sobre clareza, curiosidade e criatividade, não sobre perfeição técnica. O verdadeiro objetivo aqui é aprender a pensar junto com a IA, transformando ideias em conceitos reais e enxergando a tecnologia como uma extensão do seu raciocínio criativo. Cada interação é um experimento, quanto mais clara for sua intenção, mais surpreendente será o resultado.
+* **Visão de Cibersegurança:**
+  Como estou estudando para entrar na área de Segurança da Informação, achei incrível ver na prática como funciona o botão de "Continuar com o Google". Entendi que o aplicativo não rouba nossa senha, ele usa uma conexão segura direta com o Google para autorizar o usuário. É um ótimo exemplo de como os sistemas reais protegem nossos dados financeiros.
+Use o código com cuidado.Prontinho! Agora é só salvar no seu repositório e enviar o link do GitHub na DIO.Avise-me quando concluir o envio na DIO para comemorarmos o encerramento das suas tarefas de IA de hoje!
